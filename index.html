@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo - SmartyStreets</title>
+		
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="//d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/3.1/jquery.liveaddress.min.js"></script>
+<script>jQuery.LiveAddress({
+submitVerify:true,
+autoVerify:true,
+addresses: [
+address1: '#address-street',
+		address2: '#address-street2',	
+		locality: '#address-city',
+		administrative_area: '#address-state',
+		postal_code: '#address-zipcode',
+		country: '#country']});</script>
+
+	</head>
+	<body class="header-yellow">
+		<form id="component-form">
+							<table id="input-components">
+								<tbody>
+
+<tr>
+									<td>
+										
+									<label for="address-street" class="bold"><a href="/docs/us-street-api#input-fields" target="_blank">First Name: </a></label>
+										
+									</td>
+									<td>
+										<input type="text" id="fname">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										e.g. Danny Smith
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" >Last Name: </a></label>
+									
+									</td>
+									<td >
+										<input type="text" id="lName">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+									<label for="address-street" class="bold"><a href="/docs/us-street-api#input-fields" target="_blank">Address: </a></label>
+										
+									</td>
+									<td>
+										<input type="text" id="address-street">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										e.g. 3214 N University Ave
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" >Address Line 2: </a></label>
+									
+									</td>
+									<td >
+										<input type="text" id="address-street2">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										e.g. #409
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank" >City: </a></label>
+									
+									</td>
+									<td >
+										<input type="text" id="address-city">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										e.g. Provo
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+											<label ><a href="/docs/us-street-api#input-fields" target="_blank">State: </a></label>
+										
+									</td>
+									<td>
+										<input type="text" id="address-state">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										e.g. Utah
+									</td>
+								</tr>
+								<tr>
+									<td>
+										
+											<label class="bold"><a href="/docs/us-street-api#input-fields" target="_blank">ZIP Code: </a></label>
+										
+									</td>
+									<td >
+										<input type="text" id="address-zipcode">
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td >
+										e.g. 84604
+									</td>
+								</tr>
+								<tr>
+									<td >
+										<button id="submit-components" type="submit">Submit &raquo;</button>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</form>
+
+	</body>
+</html>
